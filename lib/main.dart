@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:whatclone/view/screen/home.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -23,12 +24,12 @@ class FacebookApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: AppBarTheme(backgroundColor: Colors.green),
+        appBarTheme: AppBarTheme(backgroundColor: Colors.red),
 
       ),
-      home: const MyHomePage(Title: 'Flutter Demo Home Page'),
+      home: Home(),
     );
   }
 }
